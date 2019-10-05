@@ -1,0 +1,438 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<title>CASHIER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Travel Hunt App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta charset utf="8">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--font-awsome-css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+<!--bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--custom css-->
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--component-css-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<!--script-->
+
+	<script src="js/Chart.bundle.js"></script>
+	<script src="js/Chart.bundle.min.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/Chart.min.js"></script>
+
+	<script src="js/modernizr.custom.js"></script>
+    <script src="js/bigSlide.js"></script>
+           <script>
+				$(document).ready(function() {
+				$('.menu-link').bigSlide();
+				});
+     </script>
+<!-- web-fonts -->
+
+<!-- //web-fonts -->
+<!-- pop-up-box -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	    <script>
+			$(document).ready(function() {
+				$('.popup-top-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+			});
+		</script>
+<!--//pop-up-box -->
+    </head>
+
+
+<body>
+
+
+
+
+<div>
+<div id="index" style="visibility: visible;">
+
+					<div id="small-dialog" >
+
+						<div class="login-modal">
+
+							<div class="login-form">
+
+
+								<div class="booking-info">
+
+									<br><br><br><br><br>
+							   	<h3 style="color: #000;">CASHIER</h3>
+
+								</div>
+
+								<form method="POST">
+									<p>User Name </p>
+
+									<input id="username" type="text" name="UserName" required=""/>
+
+
+									<p>User Password</p>
+
+									<input id="password" type="password" name="Password" required=""/>
+									<div class="wthree-text">
+
+										<div class="clear"> </div>
+									</div>
+									<input type="button" class="btn btn-default btn-block" value="Sign In" onclick="APP.login();" style="background-color:black; color:white">
+								</form>
+								<br>
+								<div>Don’t have an account ?<a href="#small-dialog1" class="sign-in popup-top-anim"> Sign Up</a></div>
+							</div>
+						</div>
+					</div>
+					<!-- //modal -->
+					<!-- modal-two -->
+					<div id="small-dialog1" class="mfp-hide">
+
+
+							<div class="login-form signup-form">
+								<br><br><br><br><br>
+								<form method="POST">
+									<p>User Name </p>
+									<input id = "new_username" type="text" name="UserName"  required=""/>
+									<p>User Email </p>
+									<input id = "new_email" type="text" name="Email"  required=""/>
+									<p>User Password</p>
+									<input id = "new_password" type="password" name="Password" placeholder="" required=""/>
+									<div class="wthree-text">
+										<input type="checkbox" id="brand1" value="">
+
+									</div>
+									<input type="button" value="Sign Up" onclick="APP.signup();"  class="btn btn-default btn-block"  style="background-color:black; color:white">
+								</form>
+							</div>
+
+					</div>
+
+</div>
+
+
+
+ <div id="friendTemplates" style="display: none">
+  	<div class="friends">
+  	<div class="chip" style="margin-left: 58px;">
+
+  			<img src="images/photo.png" alt="Person" width="96" height="96"> <span class="friendName"></span>
+
+
+
+		</div>
+
+  </div>
+
+
+</div>
+
+
+
+
+<div id="main" style="visibility:hidden;">
+
+	    <!--menu perfil y amigos -->
+		<div id="menuBar" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" style="margin-top:-50px; margin-left: 30px"><img src="images/friends.png" width="40px" height="40px" > Contacts</a>
+
+
+  <div class="input-group" style="width: 50%;margin-left: 70px">
+
+    <input id="new_friend" type="text" class="form-control" placeholder="username">
+    <span class="input-group-addon" onclick="APP.addFriend();">Add</span>
+
+  </div>
+
+   <div id=friendsGroup class="list-group">
+
+   </div>
+
+
+  <a href="#" onclick="APP.logout();"  style="margin-left: 30px"><img src="images/logout.png" width="40px" height="40px" > Logout</a>
+
+
+
+  <a href="#" style="margin-left: 33px;"><img src="images/setting.png" width="30px" height="30px" > Settings</a>
+
+</div>
+
+<div id="not menu">
+
+		<div class="menu-notify" style="background-color: black;">
+				<div class="profile-left" style="margin-top:-7px">
+
+
+					<span style="color:white;font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				</div>
+				<div class="Profile-mid">
+				<h5 class="pro-link"><a onclick="APP.goBackToMenu(this);">Cashier</a></h5>
+				</div>
+				<div class="Profile-right" style="margin-top:-10px">
+
+					<a href="#" data-toggle="modal" data-target="#newEventModal" ><img src="images/newevent.png" width="40px" height="40px" ></a>
+
+  <!-- Modal that shows the info when event is clicked -->
+							  <div class="modal fade" id="newEventModal" role="dialog">
+							    <div class="modal-dialog">
+
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <h4 class="modal-title">ADD NEW EVENT</h4>
+							        </div>
+							        <div class="modal-body">
+							          <p>Event of name: </p> <input id="inputNewEventID" type="text" name="inputNewEventName">
+							          <br>
+							          <br>
+							          <p>ADD BREAKDOWN AND PARTICIPANTS INSIDE THE NEW EVENT </p>
+
+							        </div>
+							        <div class="modal-footer">
+
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							          <button type="button" onclick="APP.newEvent()" class="btn btn-default" data-dismiss="modal">Send</button>
+							        </div>
+							      </div>
+
+							    </div>
+							  </div>
+
+
+				</div> <div class="clearfix"></div>
+
+			</div>
+
+
+<!-- banner -->
+
+
+
+
+  <div id="eventTemplates" style="display: none">
+  	<div class="events">
+  	<a href="#" class="list-group-item list-group-item-action" onClick="APP.showEvent(this);"><img src="images/photo.png" width="30px" height="30px" style="float:left;margin-left:8px;margin-top:-4px"> <span class="eventUsername" style="margin-left: 9px"></span> <span class="eventContent"></span> </a>
+  	</div>
+  </div>
+
+		<div id="eventscreen" class="container" style="display:none; ">
+
+			<header>
+				  <h1 id="eventName">1</h1>
+				</header>
+			<a style=" position: absolute; margin-left: 0%; margin-top: -35px" onclick="myFunction(this);"><img src="images/left_arrow.png" width="25px" height="25px"></a>
+
+			<nav >
+	  			<ul>
+
+	  			 <div class="input-group" style="width: 110%;">
+
+				  <input id="new_participant" type="text" class="form-control" placeholder="username">
+				  <span class="input-group-addon" onclick="APP.addParticipantToEvent(this);">add</span>
+				  </div>
+				  <div id=eventParticipants class="list-group"> Participants
+   				  </div>
+			  	</ul>
+
+				</nav>
+
+
+			 	<div class="list-group" style="float:right; position: relative; margin-top: 10px; width: 50%">
+
+			        <a href="#" class="list-group-item">
+			            <span>EVENT BREAKDOWN</span> <span class="badge"></span>
+			        </a>
+			   	 </div>
+			   	  <a href="#" data-toggle="modal" data-target="#newbreakdown" style="float:right; position: relative; margin-top: -36px; margin-right: -114px; visibility: hidden;"><img src="images/plus.png" width="25px" height="25px"></a>
+
+			<div>
+
+
+			   <canvas id="canvas"></canvas>
+
+			</div>
+
+
+
+
+		</div>
+
+
+		<div class="modal fade" id="newbreakdown" role="dialog">
+							    <div class="modal-dialog">
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <h4 class="modal-title">tell me what you want, what you really really want</h4>
+							        </div>
+							        <div class="modal-body">
+							          <i>your desire: </i><br><input id="inputNewEventID" type="text" name="inputNewEventName" style="width: 300px;">
+							          <br>
+							          <i>price:</i> <br><input id="inputNewEventID" type="text" name="inputNewEventName" style="width: 300px;">
+							          <br>
+							          <i>description: </i> <textarea  id="inputNewEventID" type="text" name="inputNewEventName" class="wideInput"></textarea>
+							        </div>
+							        <div class="modal-footer">
+
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							          <button type="button" onclick="APP.newBreakdown(this);" class="btn btn-default" data-dismiss="modal">Send</button>
+							        </div>
+							      </div>
+
+					   </div>
+			</div>
+
+		<div class="modal fade" id="newbreakdowndescription" role="dialog">
+							    <div class="modal-dialog">
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <h4 class="modal-title">Description of breakdown</h4>
+							        </div>
+							        <div class="modal-body">
+							        	<h1> Money: </h1>
+							          <i>Cosu: </i><input id="inputNewEventID" type="text" placeholder ="your contribution" style="width: 150px; margin-left: 10px;"><br>
+
+							        <div class="modal-footer">
+
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+
+							        </div>
+							      </div>
+
+					   </div>
+			</div>
+		</div>
+
+		<div id="mainscreen" class="w3agile banner-bottom">
+					<a href="#" class="list-group-item active">
+	    				My events
+	  				</a>
+
+				    <div id=eventsGroup class="list-group" style="display:block">
+
+							  <!-- Modal that shows the info when event is clicked -->
+							  <div class="modal fade" id="myModal" role="dialog">
+							    <div class="modal-dialog">
+
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							          <h4 class="modal-title">EVENTO: NOMBRE</h4>
+							        </div>
+							        <div class="modal-body">
+							          <p>DESCRIPCION TRANSACCION REALIZADA (USUARIO, FECHA)</p>
+							          <p>BREVE DESCRIPCION GENERAL DEL EVENTO</p>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							        </div>
+							      </div>
+
+							    </div>
+							  </div>
+					</div>
+			</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script>
+	var arrow=false
+
+	function openNav() {
+	    document.getElementById("menuBar").style.width = "100%";
+	}
+
+	function closeNav() {
+	    document.getElementById("menuBar").style.width = "0";
+	}
+
+	function myFunction(event){
+
+	if(!arrow){
+
+
+	   	event.parentNode.children[2].style.display="none";
+	    event.parentNode.children[3].style.width="100%";
+
+	    event.parentNode.children[4].style.marginRight="-285px";
+
+	    event.children[0].src="images/right_arrow.png";
+
+	     arrow=true;
+
+	}
+
+	else {
+
+		event.parentNode.children[2].style.display="block";
+	    event.parentNode.children[3].style.width="50%";
+
+	    event.parentNode.children[4].style.marginRight="-120px";
+
+	    event.children[0].src="images/left_arrow.png";
+
+	    arrow=false;
+
+	}
+
+    }
+
+
+</script>
+
+
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+<script src="Client.js"></script>
+<script src="APP.js"></script>
+
+<script>
+			APP.init()
+</script>
+
+
+</body>
+
+
+
+
+</html>
